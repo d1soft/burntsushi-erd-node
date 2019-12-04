@@ -14,9 +14,9 @@ Also script copy executable to /usr/bin.
 
 **Install**:
 ```shell
-npm install -S -e burntsushi-erd-node  
+npm install -S -e burntsushierdnode 
 
-yarn add -E burntsushi-erd-node
+yarn add -E burntsushierdnode
 ```
 
 **Usage**
