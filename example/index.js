@@ -1,6 +1,7 @@
 const { generate } = require('../src/index');
 
 generate({
-    input: './nfldb.er',
-    output: './erd.svg'
+    bin: '/usr/bin/erd',
+    input: '../example/erd.er',
+    output: '../example/erd.svg'
 });
