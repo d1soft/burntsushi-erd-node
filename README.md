@@ -20,15 +20,15 @@ yarn add -E burntsushierdnode
 ```
 
 **Options**
-| Name      | Description           | Default       |
-| --------- | --------------------- | ------------- |
-| input     | Path to .er file      |               |
-| output    | Path to output file   |               |
-| bin       | Path to binary file   | ../bin/erd    |
+| Name      | Description           | Default       |  
+| --------- | --------------------- | ------------- |  
+| `input`     | Path to .er file      |               |  
+| `output`    | Path to output file   |               |  
+| `bin`      | Path to binary file   | ../bin/erd    |  
 
 **Usage**
 
-__Also you can find example [here](https://github.com/d1soft/burntsushi-erd-node/tree/master/example)__
+*Also you can find example [here](https://github.com/d1soft/burntsushi-erd-node/tree/master/example)*
 
 ```js
 const { generate } = require('../src/index');
@@ -41,9 +41,9 @@ generate({
 
 ## TODO 
 
-[+] Typings
-[-] Install and build binaries platform dependent
-    [-] Windows
-    [-] UNIX
-    [-] OSx
-[-] Replace binary to node_modules/.bin
+- [x] Typings  
+- [ ] Install and build binaries platform dependent  
+    - [ ] Windows  
+    - [ ] UNIX  
+    - [ ] OSx  
+- [ ] Replace binary to node_modules/.bin  
