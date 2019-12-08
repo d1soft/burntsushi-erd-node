@@ -1,5 +1,5 @@
 const { spawn } = require('child_process');
-const { join } = require('path');
+const { resolve } = require('path');
 
 /**
  * Generates ERD from data
@@ -7,12 +7,12 @@ const { join } = require('path');
  * @param {object} options
  * @param {string} options.input Path to .er file
  * @param {string} options.output Path to ouptut: .jpg, .png, .svg etc 
- * @param {string} [options.executable] Path to erd executable
+ * @param {string} [options.bin] Path to bin file erd / erd.exe
  */
 function generate(options) {
-    const executable = join(__dirname, options.executable || '../bin/erd');
-    const input = join(__dirname, options.input);
-    const output = join(__dirname, options.output);
+    const executable = resolve(__dirname, options.bin || '../bin/erd');
+    const input = resolve(__dirname, options.input);
+    const output = resolve(__dirname, options.output);
 
     const child = spawn(executable, [
         '-i', input,
