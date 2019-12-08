@@ -1,16 +1,24 @@
 {
-  "name": "burntsushierdnode",
-  "version": "0.9.1",
+  "name": "burntsushi-erd-node",
+  "version": "0.9.2",
   "description": "BurntSushi/erd Node.js wrapper",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "./scripts/install.sh",
     "example": "node ./example/index.js"
   },
-  "author": "",
+  "types": "./typings/index.d.ts",
+  "author": "d1soft",
+  "keywords": [
+    "database", 
+    "erd", 
+    "nodejs"
+  ],
+  "repository": {
+    "url": "https://github.com/d1soft/burntsushi-erd-node"
+  },
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@types/node": "12.12.14"
   }
 }
