@@ -19,12 +19,13 @@ npm install -S -e burntsushierdnode
 yarn add -E burntsushierdnode
 ```
 
-**Options**
-| Name      | Description           | Default       |  
-| --------- | --------------------- | ------------- |  
-| `input`     | Path to .er file      |               |  
-| `output`    | Path to output file   |               |  
-| `bin`      | Path to binary file   | ../bin/erd    |  
+**Options**  
+
+| Name | Description | Default |  
+| ---- | ---- | ---- |  
+| `input` | Path to .er file | |  
+| `output` | Path to output file | |  
+| `bin` | Path to binary file | ../bin/erd |  
 
 **Usage**
 
