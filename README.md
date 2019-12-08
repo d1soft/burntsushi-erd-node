@@ -38,3 +38,12 @@ generate({
     output: './erd.svg'
 });
 ```
+
+## TODO 
+
+[+] Typings
+[-] Install and build binaries platform dependent
+    [-] Windows
+    [-] UNIX
+    [-] OSx
+[-] Replace binary to node_modules/.bin
