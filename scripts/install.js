@@ -5,13 +5,14 @@ let proc;
 switch (platform()) {
     case 'linux':
         proc = spawn('sh', [
-            './scripts/install.sh'
+            './scripts/linux/install.sh'
         ]);
     break;
 
     case 'win32': 
-        proc = spawn('powershell', [
-            './scripts/install-windows.ps1'
+        proc = spawn('powershell.exe', [
+            './scripts/windows/install.ps1',
+            '-Directory', __dirname
         ]);
     break;
 }

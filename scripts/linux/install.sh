@@ -1,4 +1,5 @@
 #!/usr/bin/sh
+DIR=$PWD
 echo "Install BurntSushi/erd and dependecies: "
 sudo apt-get update
 if [`command -v stack` ]; then
@@ -13,12 +14,13 @@ else
     sudo apt-get install graphviz
 fi
 
-git clone git://github.com/BurntSushi/erd ./erd
-cd erd
+git clone git://github.com/BurntSushi/erd "$DIR/erd"
+cd "$DIR/erd"
 
 echo "Build BurntSushi/erd: "
-stack install --local-bin-path ../bin
-cd ..
+stack install --local-bin-path "$DIR/bin"
+cd "$DIR"
 
 echo "Remove unused files: "
-rm -rf ./erd
+rm -rf "$DIR/erd"
+exit 0;
