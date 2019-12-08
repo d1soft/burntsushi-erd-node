@@ -25,7 +25,7 @@ yarn add -E burntsushierdnode
 | ---- | ---- | ---- |  
 | `input` | Path to .er file | |  
 | `output` | Path to output file | |  
-| `bin` | Path to binary file | ../bin/erd |  
+| `bin` | Path to binary file | `../bin/erd` or `../bin/erd.exe` |  
 
 **Usage**
 

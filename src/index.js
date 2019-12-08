@@ -1,5 +1,8 @@
 const { spawn } = require('child_process');
 const { resolve } = require('path');
+const { platform } = require('os');
+
+const defaultBinary = platform() == 'win32' ? '../bin/erd.exe' : '../bin/erd';
 
 /**
  * Generates ERD from data
@@ -10,7 +13,7 @@ const { resolve } = require('path');
  * @param {string} [options.bin] Path to bin file erd / erd.exe
  */
 function generate(options) {
-    const executable = resolve(__dirname, options.bin || '../bin/erd');
+    const executable = resolve(__dirname, options.bin || defaultBinary);
     const input = resolve(__dirname, options.input);
     const output = resolve(__dirname, options.output);
 
