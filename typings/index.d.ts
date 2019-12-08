@@ -3,7 +3,7 @@ declare module 'burntsushi-erd-node' {
     type GenerateOptions = {
         input: string;
         output: string;
-        bin: '../bin/erd';
+        bin?: string;
     }
 
     function generate(options: GenerateOptions): void;
